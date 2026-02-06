@@ -51,6 +51,30 @@ a {
   text-align: center;
 }
 
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+}
+
+.logo {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+
 .eyebrow {
   font-size: 0.9rem;
   text-transform: uppercase;
@@ -114,6 +138,12 @@ a {
   margin: 0 auto;
   max-width: 680px;
   color: var(--muted);
+}
+
+.hero-note {
+  margin-top: 0.75rem;
+  font-weight: 600;
+  color: var(--primary-dark);
 }
 
 .section {
@@ -216,6 +246,10 @@ a {
 }
 
 @media (min-width: 768px) {
+  .nav {
+    flex-direction: row;
+  }
+
   .cta-group {
     flex-direction: row;
   }
