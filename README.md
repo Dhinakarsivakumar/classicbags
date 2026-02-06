@@ -1,30 +1,27 @@
 # Classic Bags Co.
 
-A professional website for Classic Bags Co., a family-run bag business offering quality bags and custom designs.
+Professional website for Classic Bags Co. - a family-run business specializing in quality bags and custom designs.
+
+## Website
+
+This static site is automatically deployed via GitHub Pages.
+
+Visit: https://dhinakarsivakumar.github.io/classicbags/
 
 ## Deployment
 
-This site is configured to deploy automatically to GitHub Pages when changes are pushed to the main branch.
+The site deploys automatically when changes are pushed to the main branch.
 
-### Setup GitHub Pages
+### Manual Trigger
 
-1. Go to repository Settings → Pages
-2. Under "Build and deployment", select "GitHub Actions" as the source
-3. The workflow will automatically deploy on push to main branch
+Navigate to Actions → Deploy Site to Pages → Run workflow
 
-### Manual Deployment
+## File Structure
 
-You can also trigger deployment manually:
-1. Go to Actions tab
-2. Select "Deploy ClassicBags Site" workflow
-3. Click "Run workflow"
+- `index.html` - Main page
+- `style.css` - Styles
+- `.github/workflows/deploy-site.yml` - Deployment automation
 
-## Local Development
+## Local Preview
 
-Simply open `index.html` in your browser to preview the site locally.
-
-## Project Structure
-
-- `index.html` - Main website file
-- `style.css` - Stylesheet for the site
-- `.github/workflows/pages.yml` - GitHub Pages deployment configuration
+Open `index.html` directly in your web browser.
