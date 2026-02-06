@@ -1,0 +1,34 @@
+name: Deploy Classic Bags Website
+
+on:
+  push:
+    branches: ["copilot/deploy-app-to-production", "main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "web-deployment"
+  cancel-in-progress: false
+
+jobs:
+  publish-website:
+    environment:
+      name: github-pages
+      url: ${{ steps.site-deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Retrieve repository content
+        uses: actions/checkout@v4
+      
+      - name: Prepare site artifacts
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+      
+      - name: Publish to hosting
+        id: site-deployment
+        uses: actions/deploy-pages@v4
