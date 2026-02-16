@@ -143,6 +143,12 @@ Both fonts are loaded from Google Fonts for optimal performance.
 - No user data storage
 - Safe contact form integration
 
+## Additional Documentation
+
+- **[GitHub Hosting Guide](GITHUB_HOSTING.md)** - Step-by-step instructions for hosting on GitHub Pages
+- **[Deployment Guide](DEPLOY.md)** - General deployment options
+- **[Share Your GitHub Profile](HOW_TO_SHARE_GITHUB_PROFILE.md)** - Complete guide on sharing and optimizing your GitHub profile
+
 ## License
 
 This project is open source and available under the MIT License.
